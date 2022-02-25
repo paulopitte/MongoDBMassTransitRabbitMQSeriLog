@@ -1,13 +1,5 @@
 ﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:16279",
-      "sslPort": 0
-    }
-  },
   "profiles": {
     "MongoDBMassTransitRabbitMQ": {
       "commandName": "Project",
@@ -16,16 +8,10 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5070",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MONGODB_CONNECTION_STRING": "mongodb://localhost:27017",
+        "MONGODB_DATABASE_NAME": "Orders"
       }
     },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    }
   }
 }
